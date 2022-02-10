@@ -25,6 +25,8 @@ module.exports = {
   },
   ignorePatterns: [".*", "config", "public", "node_modules", "dist"], // 忽略指定文件夹或文件
   rules: {
+    "@typescript-eslint/no-unsafe-member-access": "warn",
+    "@typescript-eslint/no-unsafe-assignment": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "arrow-parens": "off",

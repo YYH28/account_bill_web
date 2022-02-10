@@ -25,9 +25,6 @@ module.exports = {
     // 打包前清空输出目录
     clean: isDev ? false : true,
   },
-  cache: {
-    type: "filesystem", // 使用文件缓存
-  },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".less", ".json"],
     mainFiles: ["index.js", "index.jsx", "index.ts", "index.tsx"],

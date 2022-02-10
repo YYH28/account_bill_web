@@ -14,7 +14,7 @@ const webpackConfigDev = {
     static: {
       directory: path.join(__dirname, "../dist"),
     },
-    historyApiFallback: true,
+    // historyApiFallback: true,
     open: AppConfig.autoOpen || false,
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -32,6 +32,9 @@ const webpackConfigDev = {
     port: AppConfig.port,
     proxy: AppConfig.proxy || {},
     compress: true, // 启动GZip压缩
+    historyApiFallback:{
+      disableDotRule: true
+    }
   },
 };
 
